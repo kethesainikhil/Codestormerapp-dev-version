@@ -10,10 +10,19 @@ import { Provider } from 'react-redux'
 import Store from './store/store.js'
 import VideoCall from './components/VideoCall.jsx'
 import CardComponent from './components/CardComponent.jsx'
+import ProblemsDisplay from './components/ProblemsDisplay.jsx'
 const router =  createBrowserRouter([{
   path: "/",
   element: <App />,
   children: [
+    {
+      path: "/login",
+      element: <Login  />
+    },
+    {
+      path: "/problem",
+      element: <ProblemsDisplay  />
+    },
     {
       path: "/login",
       element: <Login  />
